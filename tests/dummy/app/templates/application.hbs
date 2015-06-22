@@ -1,3 +1,34 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h1 id="title">Lable Ember Listeners</h1>
 
-{{outlet}}
+<section>
+  <h2>About</h2>
+  <p>This Ember CLI add-on adds several mixins to enable components listen to DOM events.</p>
+</section>
+
+<section>
+  <h2>Resize</h2>
+  <code class="box">
+    import ResizeListener from 'lable-ember-listeners/mixins/resize-listener';<br /><br />
+    export default Ember.Component.extend(ResizeListener, {<br />
+    &nbsp;&nbsp;didResize: function() {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;// code here<br />
+    &nbsp;&nbsp;}<br />
+    }
+  </code>
+  <h3>Example</h3>
+  <p>{{resize-checker}}</p>
+</section>
+
+<section>
+  <h2>Scroll</h2>
+  <code class="box">
+    import ScrollListener from 'lable-ember-listeners/mixins/scroll-listener';<br /><br />
+    export default Ember.Component.extend(ScrollListener, {<br />
+    &nbsp;&nbsp;didScroll: function() {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;// code here<br />
+    &nbsp;&nbsp;}<br />
+    }
+  </code>
+  <h3>Example</h3>
+  <p>{{scroll-checker}}</p>
+</section>
